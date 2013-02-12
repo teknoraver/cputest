@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	tools:context=".CpuTest"
+	android:keepScreenOn="true">
+
+	<Button
+		android:id="@+id/send"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:enabled="false"
+		android:onClick="sendMail"
+		android:text="@string/support_intent" />
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@id/send"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true" />
+
+</RelativeLayout>
