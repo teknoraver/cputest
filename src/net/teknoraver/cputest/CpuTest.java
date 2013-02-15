@@ -114,6 +114,7 @@ public class CpuTest extends ListActivity implements Runnable {
 	}
 
 	public void sendMail(View v) {
+		System.out.println(email);
 		Intent intent = new Intent(Intent.ACTION_SEND);
 		intent.setType("message/rfc822");
 		intent.putExtra(Intent.EXTRA_EMAIL, new String[] {getString(R.string.email)});
